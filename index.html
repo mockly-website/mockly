@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mockly — Web Design & Development</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- GLOW ORBS -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#" class="nav-logo">
+      mo<span class="dot"></span>ckly<span style="color:var(--cyan)">.</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+    <a href="#contatti" class="nav-cta">Inizia ora →</a>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">
+        <span class="blink"></span>
+        Disponibili per nuovi progetti
+      </div>
+      <h1>
+        <span class="line">Design che</span>
+        <span class="line accent">converte.</span>
+        <span class="line">Codice che</span>
+        <span class="line accent-m">vola.</span>
+      </h1>
+      <p class="hero-desc">
+        Trasformiamo le tue idee in esperienze digitali memorabili.
+        Siti veloci, belli e costruiti per crescere.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn-primary">Parliamo del tuo progetto</a>
+        <a href="#portfolio" class="btn-ghost">Vedi i lavori</a>
+      </div>
+    </div>
+
+    <!-- Floating mockup -->
+    <div class="hero-visual">
+      <div style="position:relative;">
+        <div class="mock-card">
+          <div class="mock-bar cyan" style="width:90%;margin-bottom:16px;height:10px;border-radius:5px;"></div>
+          <div class="mock-row">
+            <div class="mock-avatar"></div>
+            <div class="mock-lines">
+              <div class="mock-bar w70 short" style="margin-bottom:6px;"></div>
+              <div class="mock-bar w50 short"></div>
+            </div>
+          </div>
+          <div class="mock-stats">
+            <div class="mock-stat">
+              <div class="mock-stat-num">98%</div>
+              <div class="mock-stat-label">Performance</div>
+            </div>
+            <div class="mock-stat">
+              <div class="mock-stat-num" style="color:var(--magenta);">4.9★</div>
+              <div class="mock-stat-label">Soddisfazione</div>
+            </div>
+            <div class="mock-stat">
+              <div class="mock-stat-num">2x</div>
+              <div class="mock-stat-label">Conversioni</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mock-card" style="margin-top:16px;">
+          <div class="mock-bar w85 short" style="margin-bottom:8px;"></div>
+          <div class="mock-bar w70 short" style="margin-bottom:8px;"></div>
+          <div class="mock-bar w50 short"></div>
+        </div>
+
+        <!-- Floating badges -->
+        <div class="float-badge badge-1">
+          <div class="icon">✦</div>
+          <div>
+            <div style="font-size:12px;font-weight:500;">Sito consegnato</div>
+            <div style="font-size:11px;color:var(--muted);">in 4 settimane</div>
+          </div>
+        </div>
+
+        <div class="float-badge badge-2" style="border-color:rgba(30,200,240,0.3);">
+          <div class="icon" style="background:var(--cyan-dim);">⚡</div>
+          <div>
+            <div style="font-size:12px;font-weight:500;">100 / 100</div>
+            <div style="font-size:11px;color:var(--muted);">Lighthouse Score</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── STATS ── -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">80+</div>
+        <div class="stat-label">Progetti completati</div>
+      </div>
+      <div>
+        <div class="stat-num">4.9</div>
+        <div class="stat-label">Valutazione media clienti</div>
+      </div>
+      <div>
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Clienti soddisfatti</div>
+      </div>
+      <div>
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Anni di esperienza</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVIZI ── -->
+  <section id="servizi">
+    <div class="reveal">
+      <p class="section-tag">— Cosa facciamo</p>
+      <h2>Tutto ciò di cui<br>il tuo sito ha <em>bisogno</em></h2>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <div class="service-title">Web Design</div>
+        <p class="service-desc">Interfacce moderne, intuitive e progettate per massimizzare l'impatto visivo e la conversione.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⚙️</div>
+        <div class="service-title">Sviluppo Web</div>
+        <p class="service-desc">Codice pulito, performante e scalabile. React, Next.js, o CMS su misura per le tue esigenze.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🚀</div>
+        <div class="service-title">Ottimizzazione SEO</div>
+        <p class="service-desc">Visibilità organica, architettura tecnica e contenuti ottimizzati per scalare su Google.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <div class="service-title">Design Responsivo</div>
+        <p class="service-desc">Esperienze perfette su ogni dispositivo. Mobile-first by default, sempre.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <div class="service-title">E-Commerce</div>
+        <p class="service-desc">Negozi online veloci e affidabili con Shopify, WooCommerce o soluzioni custom.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <div class="service-title">Manutenzione & Analytics</div>
+        <p class="service-desc">Monitoraggio continuo, aggiornamenti e dati chiari per decisioni intelligenti.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROCESSO ── -->
+  <section id="processo">
+    <div class="reveal">
+      <p class="section-tag">— Come lavoriamo</p>
+      <h2>Un processo<br><em>trasparente</em></h2>
+    </div>
+    <div class="process-grid reveal">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-title">Discovery</div>
+        <p class="step-desc">Ascoltiamo il tuo business, analizziamo i concorrenti e definiamo gli obiettivi.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-title">Design</div>
+        <p class="step-desc">Creiamo wireframe e mockup ad alta fedeltà, iterando insieme fino alla perfezione.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-title">Sviluppo</div>
+        <p class="step-desc">Trasformiamo il design in codice veloce, accessibile e ottimizzato.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-title">Launch</div>
+        <p class="step-desc">Deployment, test finali e supporto post-lancio per un go-live senza stress.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTFOLIO ── -->
+  <section id="portfolio">
+    <div class="reveal">
+      <p class="section-tag">— Portfolio</p>
+      <h2>Lavori <em>selezionati</em></h2>
+    </div>
+    <div class="portfolio-grid reveal">
+      <div class="portfolio-item p1">
+        <div class="portfolio-bg"></div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;">
+          <div style="text-align:center;opacity:0.15;">
+            <div style="font-family:'Syne',sans-serif;font-size:64px;font-weight:800;">BRAND</div>
+          </div>
+        </div>
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">E-commerce · Shopify</span>
+          <div class="portfolio-title">LuxeBrand Store</div>
+        </div>
+      </div>
+      <div class="portfolio-item p2">
+        <div class="portfolio-bg"></div>
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Landing Page</span>
+          <div class="portfolio-title">SaaS Startup</div>
+        </div>
+      </div>
+      <div class="portfolio-item p3">
+        <div class="portfolio-bg"></div>
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Corporate · CMS</span>
+          <div class="portfolio-title">Studio Legale Ricci</div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 40% 60%,rgba(30,200,240,0.1),transparent)"></div>
+        <div class="portfolio-overlay">
+          <span class="portfolio-tag">Web App · React</span>
+          <div class="portfolio-title">Analytics Dashboard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATTI ── -->
+  <section id="contatti">
+    <div class="cta-inner reveal">
+      <p class="section-tag">— Inizia oggi</p>
+      <h2>Pronto a far<br><em>decollare</em> il sito?</h2>
+      <p class="cta-sub">
+        Raccontaci il tuo progetto. Risponderemo entro 24 ore con una proposta su misura.
+      </p>
+      <div class="contact-form">
+        <input type="email" placeholder="La tua email" />
+        <a href="#" class="btn-primary" style="white-space:nowrap;">Scrivici →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <a href="#" class="footer-logo">mockly<span>.</span></a>
+    <p class="footer-copy">Web Design & Development · © 2025 Mockly</p>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance</a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+
+</body>
+</html>

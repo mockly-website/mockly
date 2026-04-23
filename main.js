@@ -1,9 +1,6 @@
-/* ============================================================
-   MOCKLY — Web Design & Development
-   main.js
-   ============================================================ */
+/* MOCKLY */
 
-/* ── SCROLL REVEAL ── */
+/* SCROLL REVEAL */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
@@ -31,7 +28,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 
-/* ── NAV: shrink on scroll ── */
+/* NAV: shrink on scroll */
 const nav = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
@@ -45,7 +42,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* ── SMOOTH ANCHOR SCROLL (per link interni) ── */
+/* SMOOTH ANCHOR SCROLL */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {
     const target = document.querySelector(anchor.getAttribute('href'));
@@ -56,7 +53,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-/* ── CONTACT FORM: validazione email base ── */
+/* HAMBURGER MENU MOBILE */
+const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('active', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
+
+/* CONTACT FORM */
 const contactForm = document.querySelector('.contact-form');
 
 if (contactForm) {

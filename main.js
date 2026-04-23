@@ -63,11 +63,13 @@ if (contactForm) {
   const input = contactForm.querySelector('input[type="email"]');
   const btn   = contactForm.querySelector('.btn-primary');
 
-  btn.addEventListener('click', (e) => {
+ btn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const email = input.value.trim();
-    const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const textarea = contactForm.querySelector('textarea');
+    const message  = textarea ? textarea.value.trim() : '';
+    const email    = input.value.trim();
+    const valid    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
     if (!valid) {
       input.style.borderColor = '#c042f0';
